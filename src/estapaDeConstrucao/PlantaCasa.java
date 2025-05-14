@@ -1,6 +1,6 @@
 package estapaDeConstrucao;
 
-public class PlantaCasa {
+public class PlantaCasa{
     //Atributos
     public int metragem;
     public int numeroQuartos;
@@ -21,8 +21,21 @@ public class PlantaCasa {
         System.out.println("Cor " + cor);
     }
 
+    public void mudarCorDaParede(String novaCor){
+        cor = novaCor;
+        pintar();
+    }
+
     public int somarMetragem(){
        return metragem * numeroBanheiros + numeroQuartos;
+    }
+    public void alterarCaracteristica(int metros, int quartos, int banheiro, String mat){
+        metragem = metros;
+        numeroQuartos = quartos;
+        numeroBanheiros = banheiro;
+        material = mat;
+        construir();
+
     }
 }
 
