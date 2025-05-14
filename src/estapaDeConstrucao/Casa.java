@@ -1,6 +1,8 @@
+package estapaDeConstrucao;
+
 public class Casa {
     public static void main(String[] args) {
-        //Criando o Objeto Casa
+        //Criando o Objeto estapaDeConstrucao.Casa
         PlantaCasa casa = new PlantaCasa();
 
         //inicianlizando os atributos (variaveis) (caracteristicas) casa
@@ -14,5 +16,8 @@ public class Casa {
         casa.construir();
 
         casa.pintar();
+
+        int resultado = casa.somarMetragem();
+        System.out.println(resultado + " metros²");
     }
 }
