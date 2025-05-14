@@ -21,5 +21,6 @@ public class EstudoTreeMap {
 
         System.out.println("Primeira chave: " + notasAlunos.firstKey());
         System.out.println("Ultima chave: " + notasAlunos.lastKey());
+
     }
 }
