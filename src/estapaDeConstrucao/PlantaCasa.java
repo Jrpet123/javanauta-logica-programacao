@@ -1,6 +1,6 @@
 package estapaDeConstrucao;
 
-public class PlantaCasa{
+public class PlantaCasa implements Construcao{
     //Atributos
     public int metragem;
     public int numeroQuartos;
@@ -8,12 +8,24 @@ public class PlantaCasa{
     public String cor;
     public String material;
 
+    @Override
     public void construir(){
         System.out.println("A casa foi construida, as caracteristicas são: ");
         System.out.println("Metragem " + metragem);
         System.out.println("Numero de Quartos " + numeroQuartos);
         System.out.println("Numero de Banheiros " + numeroBanheiros);
         System.out.println("Material " + material);
+    }
+
+    @Override
+    public void pintar(String cor) {
+        System.out.println("Pintando a casa com a cor " + cor);
+
+    }
+
+    @Override
+    public int calcularConstrucao(int custoPorMetro) {
+        return metragem + custoPorMetro;
     }
 
     public void pintar(){
