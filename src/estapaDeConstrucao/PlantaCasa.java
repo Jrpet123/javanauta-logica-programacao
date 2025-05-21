@@ -1,6 +1,6 @@
 package estapaDeConstrucao;
 
-public class PlantaCasa implements Construcao{
+public class PlantaCasa implements Construcao {
     //Atributos
     public int metragem;
     public int numeroQuartos;
