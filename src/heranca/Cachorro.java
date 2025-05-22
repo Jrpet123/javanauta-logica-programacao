@@ -6,3 +6,4 @@ public class Cachorro extends Animal {
         System.out.println("O cachorro está latindo.");
     }
 }
+
